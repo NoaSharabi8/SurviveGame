@@ -66,28 +66,30 @@ To analyze the APK, I used the online tool:
 
 ---
 
-## ✅ Final Outcome
-
-With all missing components restored and bugs fixed, the app now:
-
-- Loads correctly
-- Accepts ID input
-- Generates the correct path
-- Displays the correct city upon success
-
-📸 *Toast message example:*  
+📸 *My result:*  
 `"Survived in New York"`
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="https://github.com/user-attachments/assets/37c566b4-6666-4167-a491-d83e4b3a9363" width="250" height="400">
+</div>
+
+🧭 **My Steps**
+
+- 3 → Down  
+- 1 → Right  
+- 5 → Right  
+- 0 → Left  
+- 0 → Left  
+- 6 → Up  
+- 2 → Up  
+- 5 → Right  
+- 4 → Left
+
 
 ---
 
-## 🛠️ Technologies Used
-
-- Java
-- Android Studio
-- Reverse engineering tools:
-  - [Java Decompiler](http://www.javadecompilers.com/apk)
-  - APKTool (optional)
-- Manual code and resource reconstruction
+## 🎉 **Have Fun!**  
+May you always reach your destination 🚀
 
 ---
 
