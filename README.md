@@ -1,7 +1,7 @@
 # 🛡️ SurviveGame Reverse Engineering Task
 
-This project was submitted as part of the **Mobile Security** course.  
-The objective was to perform reverse engineering on a given APK and **make it functional** by restoring its missing components and fixing hidden bugs.
+This project is a mobile game assigned as part of a **Mobile Security** course.  
+The objective was to perform **reverse engineering** on a given APK and make it functional by restoring its missing components and fixing hidden bugs.
 
 ---
 
@@ -18,7 +18,6 @@ Our mission:
 - Perform reverse engineering on the APK.
 - Restore all missing resources (images, layout files, icons, etc.).
 - Fix any bugs or inconsistencies to make the app fully functional.
-- Submit the working code to GitHub and show proof of success.
 
 ---
 
@@ -35,7 +34,7 @@ To analyze the APK, I used the online tool:
    - `Activity_Menu` – for ID entry and starting the game  
    - `Activity_Game` – for the actual gameplay
 4. **Imported both activities** into a new Android Studio project.
-5. Discovered that many **resources were missing**, including:
+5. **Identified missing UI resources**, including: 
    - Layout XML files (`activity_menu.xml`, `activity_game.xml`)
    - Icons and drawable images
    - String resources
@@ -50,7 +49,6 @@ To analyze the APK, I used the online tool:
 | `targetSdkVersion` was too low (`30`) | ✅ Updated it to `33` for compatibility with latest build tools |
 | `url` string was corrupted on copy-paste from the decompiled source | ✅ Manually restored the correct URL string in `strings.xml` |
 | Two invalid attributes appeared in `AndroidManifest.xml`: `android:platformBuildVersionCode` and `android:platformBuildVersionName` | ✅ Removed them completely — these are inserted by build tools, not meant for source |
-| Missing resources (layouts, drawables) | ✅ Reconstructed layout files based on Java logic and restored placeholders for images |
 
 ---
 
